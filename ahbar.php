@@ -16,10 +16,11 @@ class Task {
 
 function line() {
     echo "----------------------------------\n";
+    exit;
 }
 
 function showTask($tasks, $id) {
-    if (isset($tasks[$id])) {
+    if (isset($tasks[$bid])) {
         $tasks[$id]->show();
     } else {
         echo "No mission found with that ID.\n";
@@ -48,11 +49,11 @@ while (true) {
     switch ($text) {
         case "all":
             line();
-            showAllTasks($tasks);
+            showAllTasks($task);
         break;
         case "show":
             line();
-            $id = readline("Which mission do you want to see? ");
+            $id = red("Which mission do you want to see? ");
             showTask($tasks, $id);
             break;
         case "add":
