@@ -39,7 +39,7 @@ function addTask(&$tasks, $taskName) {
 
 $tasks = [
     new Task("Find the princess"),
-    new Task("Defeat the bowser"),
+    new Task("Defeat bowser"),
     new Task("Save the kingdom")
 ];
 
